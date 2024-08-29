@@ -8,29 +8,35 @@
 </head>
 <body>
 
-    <header class="contenedor__general">
-        <div class="imagen-superior grid">
-            <div class="contenedor-principal">
-              <h1>BlogDeCafé</h1>
+    <header class="header">
             
-        <nav class="navegacion">
-            <a href="">Nosotros</a>
-            <a href="">Cursos</a>
-            <a href="">Contacto</a>
-        </nav>
-    </div>
-</div>
-        <div class="contenedor__principal--informacion">
-         <h2>Blog de café con consejos y cursos</h2>
-         <p>Aprende de los expertos con las mejores recetas y consejos</p>
-         </div>
-       </div>
+            <div class="layout">
+              
+                
+                <div class="superior-derecho parrafos">
+                     <h1>BlogDeCafé</h1>
+                </div> 
+           
+                <div class="superior-izquierdo">
+                    <div class="navegacion">
+                      <a href="">Nosotros</a>
+                      <a href="">Cursos</a>
+                    <a href="">Contacto</a>
+                </div>
+                </div>
 
+                 <div class="contenido-inferior parrafos">
+                       <h2>Blog de café con consejos y cursos</h2>
+                       <p>Aprende de los expertos con las mejores recetas y consejos</p>
+                </div>
 
+            </div>
+            
+
+    </header> <!-- CONTENIDO HEADER-->
+
+    <main>
         <div class="contenedor">
-            
-            
-            
             <section>
                 <h2>Nuestro Blog</h2>
                 <img src="img/blog1.jpg" alt="">
@@ -39,7 +45,8 @@
                     reiciendis ea excepturi! Molestias aperiam fugiat deleniti laudantium atque numquam?</p>
 
                     <input class="boton-enviar" type="submit" value="Leer Entrada" alt="boton enviar">
-            </section>
+            <hr>
+                </section>
 
 
             <section class="contenido__info">
@@ -53,6 +60,7 @@
                     <input class="boton-enviar" type="submit" value="Leer Entrada" alt="boton enviar">
 
                 </div>
+                <hr>
             </section>
 
             <section class="contenido__beneficios">
@@ -75,17 +83,18 @@
                         <p> <b>Precio:</b> Gratis</p>
                         <p> <b>Cupo:</b> 20</p>
 
-                <input class="boton-informacion" type="submit" value="Mas Información sobre nuestros cursos">
-                </section>
+                <a class="boton-informacion" href="">Mas informacion sobre nuestros cursos</a>
+                <hr>
+            </section>
 
                 <section>
 
-                        <h3>Tecnicas de Extraccion de Café</h3>
+                        <h3>4 Recetas de Café para Principiantes</h3>
                             <p> <b>Precio:</b> Gratis</p>
-                    <p> <b>Cupo:</b> 20</p>
-    
-                    <input class="boton-informacion" type="submit" value="Mas Información sobre nuestros cursos">
-                    </section>
+                            <p> <b>Cupo:</b> 20</p>
+                <a class="boton-informacion" href="">Mas informacion sobre nuestros cursos</a>
+                    
+            </section>
 
             </aside>
         </div>
@@ -96,9 +105,9 @@
         <div class="contenedor__barra">
              <div class="barra">
                     <a class="logo" href="index.html">
-                    <h1 class="logo__nombre no-margin centrar-texto">Blog<span class="logo__bold">DeCafé</span></h1>
+                    <h1 class="logo__nombre contenedor-principal">Blog<span class="logo__bold">DeCafé</span></h1>
                     </a>
-                <nav class="nav-barra">
+                <nav class="navegacion">
                     <a href="">Nosotros</a>
                     <a href="">Curso</a>
                     <a href="">Contacto</a>
