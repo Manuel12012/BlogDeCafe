@@ -1,0 +1,148 @@
+:root {
+    --fuenteHeading: 'PT Sans', sans-serif;
+    --fuenteParrafos: 'Open Sans', sans-serif;
+
+    --primario: #784D3C;
+    --gris: #e1e1e1;
+    --blanco: #ffffff;
+    --negro: #000000;
+}
+html {
+    box-sizing: border-box;
+    font-size: 62.5%; /* 1 rem = 10px */    
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+body {
+    font-family: var(--fuenteParrafos);
+    font-size: 1.6rem;
+    line-height: 2;
+    margin: 0;
+}
+
+/** Globales **/
+.contenedor {
+    width: min(90%, 120rem);
+    margin: 0 auto;
+}
+a {
+    text-decoration: none;
+}
+h1, h2, h3, h4 {
+    font-family: var(--fuenteHeading);
+    line-height: 1.2;
+}
+h1 {
+    font-size: 4.8rem;
+}
+h2 {
+    font-size: 4rem;
+}
+h3 {
+    font-size: 3.2rem;
+}
+h4 {
+    font-size: 2.8rem;
+}
+img {
+    max-width: 100%;
+}
+
+
+@media (min-width: 768px) {
+    .contenedor{
+        display: grid;
+        grid-template-columns: 65% 35%;
+        grid-template-rows: repeat(3,1fr);
+        gap: 2rem;
+    }
+
+    .boton-enviar{
+        background-color: var(--negro);
+        color: var(--blanco);
+        font-family: var(--fuenteParrafos);
+        text-transform: uppercase;
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+        padding-left: 3rem;
+        padding-right: 3rem;
+        font-size: 1.6rem;
+        font-weight:700;
+        border: 0;
+    }
+
+    .boton-informacion{
+        background-color: var(--primario);
+        color: var(--blanco);
+        font-family: var(--fuenteParrafos);
+        padding: 1.5rem 3rem 1.5rem 3rem;
+        font-size: 1.5rem;
+        text-transform: uppercase;
+        
+    }
+
+    .contenido__info{
+        grid-column: 1/2;
+        grid-row: 2/3;
+    }
+    
+    .contenido__beneficios{
+        grid-column: 1/2;
+        grid-row: 3/4;
+    }
+
+    .imagen-superior {
+        display: flex;
+        justify-content: space-around;
+        width: 100%;
+        height: 600px; /* Ajusta este valor según el tamaño de la imagen */
+        background-image: url(../img/banner.jpg);
+        background-size: cover; /* Esto hará que la imagen cubra todo el contenedor */
+        background-position: center; /* Esto centrará la imagen */
+        
+    }
+
+    .contenedor__general{
+        padding: 0;
+    }
+    
+    
+
+    /*** NAVEGADORES ***/
+
+    nav a, .contenedor-principal{
+        color: var(--blanco);
+        font-family: var(--fuenteHeading);
+        
+    }
+
+    .contenedor__principal--informacion{
+        color: var(--blanco);
+        font-family: var(--fuenteHeading);
+    }
+
+    .grid{
+        display: flex;
+        justify-content: space-around;
+        
+    }
+
+}
+
+.footer{
+    background-color: var(--negro);
+    padding-bottom: 3rem;
+    padding-top: 4rem;
+  
+}
+.barra{
+   display: flex;
+   justify-content: space-around;
+   align-items: center;
+}
+
+.logo__nombre{
+  
+}
+
