@@ -64,13 +64,18 @@ img {
 }
 
 /** HEADER**/
-    .header{
-        background-image: url(../img/banner.jpg);
-        height: 60rem;
-        background-repeat: no-repeat;
-        background-position: center center; /* Se centrara para al hacer pequeño*/
-
-    }
+.webp .header {
+    background-image: url(../img/banner.webp);
+}
+.no-webp .header {
+    background-image: url(../img/banner.jpg);
+}
+.header {
+    height: 60rem;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
     .header__texto{
         margin-top: 5rem;
         color: var(--blanco);
@@ -154,6 +159,7 @@ img {
     text-transform: uppercase;
     font-weight: 700;
     margin-bottom: 2rem;
+    border: none;
    }
 
    @media (min-width: 768px) {
@@ -170,6 +176,9 @@ background-color: var(--negro);
     background-color: var(--primario);
    }
 
+   .boton:hover{
+    cursor: pointer;
+   }
 .cursos{
     list-style: none;
 }
@@ -215,4 +224,73 @@ margin-bottom: 2rem;
   }
 
  
+}
+
+/*Cursos*/
+
+.curso{
+    padding: 3rem 0;
+    border-bottom: 1px solid var(--gris);
+}
+
+.curso__label{
+    font-weight: bold;
+    font-family: var(--fuenteHeading);
+}
+
+.curso__info{
+    font-weight: normal;
+}
+
+.curso:last-of-type{
+    border-bottom: none;
+}
+
+.curso__label,
+.curso__info{
+    font-size: 2rem;
+}
+
+@media (min-width: 768px) {
+    .curso{
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        column-gap: 2rem;
+    }
+}
+
+/*Contacto*/
+.contacto-bg{
+    background-image: url(../img/contacto.jpg);
+    height: 40rem;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+/*Formulario*/
+.formulario{
+background-color: var(--blanco);
+margin: -5rem auto 0 auto;
+width: 95%;
+padding: 5rem;
+}
+
+.campo{
+    display: flex;
+    margin-bottom: 2rem;
+}
+
+.campo__field{
+    flex:1;
+    border: 1px solid var(--gris);
+}
+
+.campo__label{
+    flex: 0 0 9rem;
+    text-align: right;
+    padding-right: 2rem;
+}
+
+.campo__field--textarea{
+    height: 20rem;
 }
